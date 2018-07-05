@@ -14,15 +14,20 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
-      <h1><a href="/" aria-label="Link Restaurant Reviews">Restaurant Reviews</a></h1>
-    </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
-      <li><a href="/" aria-label="Link Home">Home</a></li>
-    </ul>
+    <nav aria-label="breadcrumb">
+      <ol>
+        <!-- Beginning breadcrumb -->
+        <li>
+          <h1><a href="/" aria-label="Link Restaurant Reviews">Restaurant Reviews</a></h1>
+        </li>
+        <li>
+          <a href="/" aria-label="Link Home">Home</a>
+        </li>
+      </ol>
     <!-- End breadcrumb -->
     <!-- End nav -->
+    </nav>
+
   </header>
   <!-- End header -->
 
@@ -31,12 +36,12 @@
     <!-- Beginning map -->
     <section id="maincontent-top">
       <aside id="map-container">
-        <div id="map"></div>
+        <div id="map" role="application"></div>
       </aside>
       <!-- End map -->
       <!-- Beginning restaurant -->
       <section id="restaurant-container">
-        <h1 id="restaurant-name"></h1>
+        <h3 id="restaurant-name"></h3>
         <img id="restaurant-img">
         <p id="restaurant-cuisine"></p>
         <p id="restaurant-address"></p>
